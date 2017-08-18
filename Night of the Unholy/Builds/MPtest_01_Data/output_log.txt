@@ -1,0 +1,128 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8494
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_01_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.030 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.830903 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3298 -> priority: 1 
+  Thread -> id: 1064 -> priority: 1 
+  Thread -> id: 4740 -> priority: 1 
+  Thread -> id: 1014 -> priority: 1 
+Getting Weaponlist
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Pistol (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for Pistol(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Weaponlist
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for Pistol(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Weaponlist
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for Pistol(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {64736}, last rec time {62302} rtt {1} timeout {2000}
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+ClientDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnloadTime: 0.512731 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 697.
+Total: 0.248198 ms (FindLiveObjects: 0.018529 ms CreateObjectMapping: 0.016579 ms MarkObjects: 0.202605 ms  DeleteObjects: 0.010483 ms)
+
+Getting Weaponlist
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Pistol (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Weaponlist
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Chest has been shot.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bang
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Chest has been shot.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bang
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Chest has been shot.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bang
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Head has been shot.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bang
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Reloading...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.233569 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 0.267702 ms (FindLiveObjects: 0.014384 ms CreateObjectMapping: 0.015360 ms MarkObjects: 0.231375 ms  DeleteObjects: 0.006339 ms)
+

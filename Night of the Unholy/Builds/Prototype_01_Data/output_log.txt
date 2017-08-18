@@ -1,0 +1,265 @@
+Mono path[0] = 'C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Builds/Prototype_01_Data/Managed'
+Mono config path = 'C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Builds/Prototype_01_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Builds/Prototype_01_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55272
+Multi-casting "[IP] 192.168.0.2 [Port] 55272 [Flags] 2 [Guid] 4121772810 [EditorId] 1009997920 [Version] 1048832 [Id] WindowsPlayer(ROG1080) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55272]
+PlayerConnection already initialized - listening to [0.0.0.0:55272]
+Player data archive not found at `C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Builds/Prototype_01_Data/data.unity3d`, using local filesystem
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvldumd.dll 22.21.13.8494]
+    Renderer: NVIDIA GeForce GTX 1080
+    Vendor:   NVIDIA
+    VRAM:     3072 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0 ATOC=1 BC4=1 BC5=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\Prototype_01_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.030 seconds
+WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Setting to default shader.
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+WARNING: BC6H/BC7 texture format is not supported, decompressing texture
+UnloadTime: 0.788236 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 24ac -> priority: 1 
+  Thread -> id: 2900 -> priority: 1 
+  Thread -> id: 167c -> priority: 1 
+  Thread -> id: 2388 -> priority: 1 
+Getting Weaponlist
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WeaponList:GetInstance() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\WeaponList.cs:28)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:25)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/WeaponList.cs Line: 28)
+
+Pistol (UnityEngine.GameObject)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WeaponList:Setup() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\WeaponList.cs:18)
+WeaponList:GetInstance() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\WeaponList.cs:34)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:25)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/WeaponList.cs Line: 18)
+
+ spawned a weapon
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerWeaponManager:SpawnWeapon() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:87)
+PlayerWeaponManager:ActivateWeapon() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:40)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:28)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Player/PlayerWeaponManager.cs Line: 87)
+
+Getting Weaponlist
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WeaponList:GetInstance() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\WeaponList.cs:28)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:25)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/WeaponList.cs Line: 28)
+
+ spawned a weapon
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerWeaponManager:SpawnWeapon() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:87)
+PlayerWeaponManager:ActivateWeapon() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:40)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:28)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Player/PlayerWeaponManager.cs Line: 87)
+
+Getting Weaponlist
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WeaponList:GetInstance() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\WeaponList.cs:28)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:25)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/WeaponList.cs Line: 28)
+
+ spawned a weapon
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerWeaponManager:SpawnWeapon() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:87)
+PlayerWeaponManager:ActivateWeapon() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:40)
+PlayerWeaponManager:Start() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerWeaponManager.cs:28)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Player/PlayerWeaponManager.cs Line: 87)
+
+NetworkWriter Chest (UnityEngine.GameObject) has no NetworkIdentity
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkWriter:Write(GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkWriter.cs:520)
+PlayerWeaponManager:CallCmdPlayerShot(String, GameObject, Single)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:82)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkWriter.cs Line: 520)
+
+Bang
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:83)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/Pistol.cs Line: 83)
+
+NetworkWriter r_leg (UnityEngine.GameObject) has no NetworkIdentity
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkWriter:Write(GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkWriter.cs:520)
+PlayerWeaponManager:CallCmdPlayerShot(String, GameObject, Single)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:82)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkWriter.cs Line: 520)
+
+Bang
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:83)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/Pistol.cs Line: 83)
+
+NetworkWriter Head (UnityEngine.GameObject) has no NetworkIdentity
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkWriter:Write(GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkWriter.cs:520)
+PlayerWeaponManager:CallCmdPlayerShot(String, GameObject, Single)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:82)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkWriter.cs Line: 520)
+
+Bang
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:83)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/Pistol.cs Line: 83)
+
+NetworkWriter l_arm (UnityEngine.GameObject) has no NetworkIdentity
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkWriter:Write(GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkWriter.cs:520)
+PlayerWeaponManager:CallCmdPlayerShot(String, GameObject, Single)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:82)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkWriter.cs Line: 520)
+
+Bang
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+<ShootCoRo>c__Iterator1:MoveNext() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:83)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(String, Object)
+UnityEngine.MonoBehaviour:StartCoroutine(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MonoBehaviourBindings.gen.cs:84)
+Pistol:Shoot() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Weapon\Pistol.cs:15)
+PlayerController:Update() (at C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Assets\Resources\Script\Player\PlayerController.cs:95)
+ 
+(Filename: C:/Users/bergg/Documents/Ludum Dare/Night of the Unholy/Assets/Resources/Script/Weapon/Pistol.cs Line: 83)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {224260}, last rec time {221927} rtt {1} timeout {2000}
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+ClientDisconnected due to error: Timeout
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+UnityEngine.Networking.NetworkManager:OnClientDisconnect(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:1134)
+UnityEngine.Networking.NetworkManager:OnClientDisconnectInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:964)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:220)
+UnityEngine.Networking.NetworkConnection:InvokeHandlerNoData(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:202)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:771)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 1134)
+
+WARNING: BC6H/BC7 texture format is not supported, decompressing texture
+UnloadTime: 1.072274 ms
+System memory in use before: 26.3 MB.
+System memory in use after: 26.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 691.
+Total: 0.297935 ms (FindLiveObjects: 0.015116 ms CreateObjectMapping: 0.017310 ms MarkObjects: 0.255268 ms  DeleteObjects: 0.009752 ms)
+
