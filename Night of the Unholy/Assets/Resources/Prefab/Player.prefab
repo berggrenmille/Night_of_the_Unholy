@@ -777,6 +777,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentWeapon: {fileID: 0}
   currentWeaponObj: {fileID: 0}
+  syncWeaponId: 0
   gunHolder: {fileID: 4397201879538866}
 --- !u!114 &114058552782109644
 MonoBehaviour:
@@ -1475,13 +1476,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3c509f5ad54aa489f1a2b2e922ad3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 0}
-  playerName: 
   health: 1
   healthMax: 50
   healthRegenPerSecond: 2
+  isDead: 0
   disableWhenDead: []
   disableGameObjectsWhenDead: []
+  wasEnabled: 
   movement:
     moveSpeedForwards: 4
     moveSpeedBackwards: 2
@@ -1490,6 +1491,7 @@ MonoBehaviour:
     maxVelocityChange: 2
     jumpForce: 5
     isRunning: 0
+  settings: {fileID: 0}
 --- !u!114 &114923180576574576
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -49,9 +49,10 @@ public class PlayerWeaponManager : NetworkBehaviour {
         ActivateWeapon();
     }
 
-    public void ReplaceWeapon(WeaponList.Weapons _id)
+    public void ReplaceWeapon(WeaponList.Weapons weaponId)
     {
-        weapons[(int)usingWeapon] = (Weapon)weaponList.GetWeapon(_id);
+        syncWeaponId = (int)weaponId;
+        weapons[(int)usingWeapon] = (Weapon)weaponList.GetWeapon(weaponId);
         ActivateWeapon();
     }
 
@@ -123,10 +124,36 @@ public class PlayerWeaponManager : NetworkBehaviour {
     }
 
     [Command] //Called on server only
-    public void CmdPlayerShotEnemy(string collider, GameObject Enemy, float damage)
+    public void CmdPlayerShotEnemy(string collider, GameObject enemy, float damage)
     {
-        Debug.Log(player.info.name + " shot " + Enemy + " at " + collider);
-        
+        Debug.Log(player.info.name + " shot " + enemy + " at " + collider);
+        int colliderId;
+        switch (collider)
+        {
+            case "head":
+                colliderId = 1;
+                break;
+            case "chest":
+                colliderId = 2;
+                break;
+            case "l_arm":
+                colliderId = 3;
+                break;
+            case "r_arm":
+                colliderId = 4;
+                break;
+            case "l_leg":
+                colliderId = 5;
+                break;
+            case "r_leg":
+                colliderId = 6;
+                break;
+            default:
+                colliderId = 0;
+                break;
+        }
+        var e = enemy.GetComponent<Enemy>();
+        e.RpcTakeDamage(damage, colliderId);
     }
 }
 

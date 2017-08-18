@@ -23,14 +23,13 @@ public class Pistol : Weapon
 
     public override void Reload()
     {
-        if (!isReloading)
+        if (!isReloading && 
+            currentClipAmmo < clipSize &&
+            totalAmmo > 0)
         {
-            if (currentClipAmmo < clipSize && totalAmmo > 0)
-            {
-                Debug.Log("Reloading...");
-                isReloading = true;
-                StartCoroutine("ReloadCoRo");
-            }
+            Debug.Log("Reloading...");
+            isReloading = true;
+            StartCoroutine("ReloadCoRo");
         }
     }
 
@@ -51,7 +50,7 @@ public class Pistol : Weapon
 
     }
 
-    IEnumerator ReloadCoRo()
+    private IEnumerator ReloadCoRo()
     {
         yield return new WaitForSeconds(reloadTime);
         if (totalAmmo >= clipSize - currentClipAmmo)
@@ -70,7 +69,7 @@ public class Pistol : Weapon
     }
 
     [Client]
-    IEnumerator ShootCoRo()
+    private IEnumerator ShootCoRo()
     {
         if (currentClipAmmo != 0)
         {

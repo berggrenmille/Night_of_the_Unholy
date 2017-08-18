@@ -6,8 +6,11 @@ using UnityEngine;
 public class Enemy : NetworkBehaviour
 {
 
-    [SyncVar]
-    public float health = 1;
+    [SyncVar] public new string name = "enemy";
+
+    [SyncVar] public float health = 1;
+
+    [SyncVar] public bool isDead = false;
 
     public GameObject target;
 
@@ -28,10 +31,10 @@ public class Enemy : NetworkBehaviour
 
     }
 
-    [Command]
-    public virtual void CmdTakeDamage()
+    [ClientRpc]
+    public virtual void RpcTakeDamage(float amount, int colliderId)
     {
-
+ 
     }
 
     [Server]
@@ -43,7 +46,7 @@ public class Enemy : NetworkBehaviour
     [Command]
     public virtual void CmdDie()
     {
-
+        Debug.Log(name + " died");
     }
 
     [ClientRpc]

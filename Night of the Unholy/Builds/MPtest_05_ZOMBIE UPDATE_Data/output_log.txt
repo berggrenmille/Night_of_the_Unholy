@@ -7,36 +7,48 @@ Direct3D:
     VRAM:     3072 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0 ATOC=1 BC4=1 BC5=1
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\bergg\Documents\Ludum Dare\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.054 seconds
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\bergg\Documents\Unity Projects\Night_of_the_Unholy\Night of the Unholy\Builds\MPtest_05_ZOMBIE UPDATE_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.056 seconds
 WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Pass '' has no vertex shader
 WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Setting to default shader.
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 WARNING: BC6H/BC7 texture format is not supported, decompressing texture
-UnloadTime: 0.769949 ms
+UnloadTime: 0.770193 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 136c -> priority: 1 
-  Thread -> id: d74 -> priority: 1 
-  Thread -> id: 4ba8 -> priority: 1 
-  Thread -> id: 18c0 -> priority: 1 
+  Thread -> id: 519c -> priority: 1 
+  Thread -> id: 341c -> priority: 1 
+  Thread -> id: 105c -> priority: 1 
+  Thread -> id: 4cac -> priority: 1 
 Did not find target for SyncList message for 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {33695}, last rec time {31395} rtt {11} timeout {2000}
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+ClientDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WARNING: BC6H/BC7 texture format is not supported, decompressing texture
+UnloadTime: 0.377660 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 763.
+Total: 0.283062 ms (FindLiveObjects: 0.017554 ms CreateObjectMapping: 0.019260 ms MarkObjects: 0.238201 ms  DeleteObjects: 0.007801 ms)
 
