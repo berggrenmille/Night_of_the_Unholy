@@ -83,6 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33373c670180c3e49adf339b4ff426aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMode: {fileID: 0}
+  enemyPrefabs: []
 --- !u!114 &114565526961808820
 MonoBehaviour:
   m_ObjectHideFlags: 1

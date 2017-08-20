@@ -21,11 +21,10 @@ public class WaveManager : NetworkBehaviour
         public float spawnRate;
     }
 
-    public GameObject[] spawnPoints;
+    public Gamemode gamemode;
     public Wave[] randomWaves;
     public Wave[] premadeWaves;
     public bool useRandomizedWaves = true;
-    public GameObject[] enemiesPreset;
     private int nextWave = 0;
     private bool checkAlive = true;
 
@@ -34,9 +33,10 @@ public class WaveManager : NetworkBehaviour
 
     public WaveState currentWaveState = WaveState.DELAYED;
 
-    private void Awake()
+    public void SetupWaves()
     {
         this.enabled = true;
+        gamemode = GetComponent<Gamemode>();
         if (useRandomizedWaves)
         {
             randomWaves = new Wave[200];
@@ -45,19 +45,25 @@ public class WaveManager : NetworkBehaviour
                 randomWaves[i] = new Wave();
                 randomWaves[i].id = (i + 1).ToString();
                 randomWaves[i].spawnRate = 1 + (i + 1) / 10;
-                randomWaves[i].amount = (i + 5) + Random.Range(0, (i + 1)) * (3 / ((1/i)+1))+1; //Top secret amount formula
-                randomWaves[i].enemies = enemiesPreset;
+                randomWaves[i].enemies = gamemode.enemyPrefabs;
                 randomWaves[i].enemyDamageMultiplier = 1 + 0.05f * i;
                 randomWaves[i].enemyHealthMultiplier = 1 + 0.05f * i;
+
+                if (i >= 8)
+                {
+                    randomWaves[i].amount = i + Random.Range(5, (5+(i/3)));
+                }
+                else
+                {
+                    randomWaves[i].amount = (Fib(i));
+                }
             }
         }
     }
 
     private void Start()
     {
-        startTimer = delayedStart;
-        spawnPoints = GameObject.FindGameObjectsWithTag("Respawn");
-
+        startTimer = delayedStart;     
     }
 
     private void Update()
@@ -125,20 +131,21 @@ public class WaveManager : NetworkBehaviour
 
     void SpawnEntity(GameObject _entity, Wave _wave)
     {
-        GameObject clone = Instantiate(_entity, spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position, Quaternion.identity, null);
+        GameObject clone = Instantiate(_entity, gamemode.enemySpawnpoints[Random.Range(0, gamemode.enemySpawnpoints.Length)].transform.position, Quaternion.identity, null);
         Enemy enemy = clone.GetComponent<Enemy>();
         if (enemy != null)
         {
             enemy.health = enemy.health * _wave.enemyHealthMultiplier;
             enemy.damage = enemy.damage * _wave.enemyDamageMultiplier;
         }
+        NetworkServer.Spawn(clone);
         Debug.Log("Spawned Entity: " + _entity.name);
     }
 
     IEnumerator StartWave(Wave _wave)
     {
         Debug.LogWarning("Starting new wave " + _wave.id);
-        GameObject.Find("Player").SendMessage("UpdateRound", _wave.id);
+        //GameObject.Find("Player").SendMessage("UpdateRound", _wave.id);
         currentWaveState = WaveState.STARTING;
 
         for (int i = 0; i < _wave.amount; i++)
@@ -158,6 +165,22 @@ public class WaveManager : NetworkBehaviour
         yield return new WaitForSeconds(time);
         check = true;
         yield break;
+    }
+
+    public int Fib(int n)
+    {
+        if (n <= 2)
+        {
+            return 1;
+        }
+        int a = 1, b = 1, c;
+        for (int i = 0; i < n - 2; i++)
+        {
+            c = a + b;
+            b = a;
+            a = c;
+        }
+        return a;
     }
 }
 

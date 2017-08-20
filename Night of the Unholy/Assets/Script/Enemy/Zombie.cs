@@ -51,7 +51,6 @@ public class Zombie : Enemy {
         {
             case 1:
                 StopCoroutine(targetPlayerCoRo);
-                GameManager.currentInstance.CmdZombieTargetRandomPlayer(netIdentity); // target random player
                 StartCoroutine(targetPlayerCoRo);
                 break;
             default:
@@ -142,7 +141,7 @@ public class Zombie : Enemy {
                 {
                     if (!hit.collider.CompareTag("Player"))
                     {
-                        Debug.Log(name + " is following target without sight");
+                        Debug.Log(name + " is tracking target without sight");
                         count++; //count ticks since lost view of player
                         continue;
                     }

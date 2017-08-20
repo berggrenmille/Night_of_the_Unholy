@@ -15,9 +15,9 @@ public class GameManager : NetworkBehaviour
     { }
     
 
-    void PlayersChanged(SyncListStruct<Player.PlayerInfo>.Operation op, int itemIndex)
+    private void PlayersChanged(SyncListStruct<Player.PlayerInfo>.Operation op, int itemIndex)
     {
-        Debug.Log("Players changed:" + op);
+        Debug.Log("Playerlist operation: " + op +" " + players[itemIndex]);
     }
 
     public Players players; //The player list
@@ -25,9 +25,12 @@ public class GameManager : NetworkBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         if (currentInstance != null)
         {
-            Debug.LogError("More than one GameManager in scene.");
+            Debug.LogError("More than one GameManager in scene! Replacing...");
+            Destroy(currentInstance.gameObject);
+            currentInstance = this;
         }
         else
         {
@@ -35,28 +38,36 @@ public class GameManager : NetworkBehaviour
         }
         if (players == null) players = new Players();
         players.Callback = PlayersChanged;
+
         gameMode = gameObject.AddComponent<GamemodeZombieCoop>();
     }
 
     [Command]
-    public void CmdZombieTargetRandomPlayer(NetworkInstanceId id) //return random player
+    public void CmdEnemyTargetRandomPlayer(NetworkInstanceId enemyId) //return random player
     {
         if(players.Count > 0)
         {
 
-            NetworkServer.FindLocalObject(id).GetComponent<Zombie>().target = NetworkServer.FindLocalObject(players[UnityEngine.Random.Range(0, players.Count)].netId);
+            NetworkServer.FindLocalObject(enemyId).GetComponent<Enemy>().target = NetworkServer.FindLocalObject(players[UnityEngine.Random.Range(0, players.Count)].netId);
             //return NetworkServer.FindLocalObject(players[UnityEngine.Random.Range(0, players.Count)].netId);
         }
         else
         {
-            NetworkServer.FindLocalObject(id).GetComponent<Zombie>().target = null;
+            NetworkServer.FindLocalObject(enemyId).GetComponent<Enemy>().target = null;
             //return null;
         }
     }
 
     public void AddPlayerToList(Player.PlayerInfo obj)
     {
-        players.Add(obj);
+        Player.PlayerInfo info = obj;
+        players.Add(info);
+    }
+
+    public void RemovePlayerFromList(Player.PlayerInfo obj)
+    {
+        if (players.Contains(obj))
+            players.Remove(obj);
     }
 }
 
