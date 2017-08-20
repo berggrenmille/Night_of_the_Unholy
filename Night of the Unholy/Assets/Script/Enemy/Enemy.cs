@@ -12,6 +12,8 @@ public class Enemy : NetworkBehaviour
 
     [SyncVar] public bool isDead = false;
 
+    public float damage = 1;
+
     public GameObject target;
 
     [Server]

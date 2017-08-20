@@ -10,9 +10,10 @@ using UnityEngine;
 public class GameManager : NetworkBehaviour
 {
     public static GameManager currentInstance;
-
+    public Gamemode gameMode;
     public class Players : SyncListStruct<Player.PlayerInfo>
     { }
+    
 
     void PlayersChanged(SyncListStruct<Player.PlayerInfo>.Operation op, int itemIndex)
     {
@@ -34,6 +35,7 @@ public class GameManager : NetworkBehaviour
         }
         if (players == null) players = new Players();
         players.Callback = PlayersChanged;
+        gameMode = gameObject.AddComponent<GamemodeZombieCoop>();
     }
 
     [Command]
@@ -56,22 +58,6 @@ public class GameManager : NetworkBehaviour
     {
         players.Add(obj);
     }
-
-    [Command]
-    void CmdAddPlayerToList(Player.PlayerInfo obj)
-    {
-        players.Add(obj);
-        // this code is only executed on the server
-       // RpcAddPlayerToList(obj); // invoke Rpc on all clients
-    }
-
-    [ClientRpc]
-    void RpcAddPlayerToList(Player.PlayerInfo obj)
-    {
-        // this code is executed on all clients
-        
-    }
-
 }
 
 

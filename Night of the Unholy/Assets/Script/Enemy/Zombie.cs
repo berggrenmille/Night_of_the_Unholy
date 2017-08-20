@@ -122,7 +122,6 @@ public class Zombie : Enemy {
 
             foreach (var _player in GameManager.currentInstance.players) //Check distance to all alive players
             {
-                Debug.Log(_player.ToString());
                 Player player = NetworkServer.FindLocalObject(_player.netId).GetComponent<Player>(); //Find the player script
                 nearestPlayerRange = target == null ? 0f : (target.transform.position - transform.position).magnitude;
                 if (!player.isDead)
@@ -130,7 +129,6 @@ public class Zombie : Enemy {
                     var range = (player.transform.position - transform.position).magnitude;
                     if (range < nearestPlayerRange || nearestPlayerRange == 0f)
                     {
-                        Debug.Log("New nearest player");
                         nearestPlayer = player;
                         nearestPlayerRange = range;
                     }
@@ -144,14 +142,14 @@ public class Zombie : Enemy {
                 {
                     if (!hit.collider.CompareTag("Player"))
                     {
-                        Debug.Log("Folling player without sight");
+                        Debug.Log(name + " is following target without sight");
                         count++; //count ticks since lost view of player
                         continue;
                     }
-                    else
+                    else if(target != nearestPlayer.gameObject)
                     {
-                        target = nearestPlayer.gameObject;
-                        Debug.Log("New target: " + nearestPlayer);
+                            target = nearestPlayer.gameObject;
+                            Debug.Log("New target: " + nearestPlayer);
                     }
                 }
             }
