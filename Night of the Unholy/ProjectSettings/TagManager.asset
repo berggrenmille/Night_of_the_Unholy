@@ -9,6 +9,8 @@ TagManager:
   - Purchasable
   - SpawnPlayer
   - SpawnEnemy
+  - IngameMenu
+  - EnemyPart
   layers:
   - Default
   - TransparentFX

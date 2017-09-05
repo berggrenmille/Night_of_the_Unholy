@@ -22,6 +22,11 @@ public class GameManager : NetworkBehaviour
 
     public Players players; //The player list
 
+    public override void OnStartServer()
+    {
+        StartCoroutine("SrvCheckForDisconnectedPlayersCoRo");
+        base.OnStartServer();
+    }
 
     private void Awake()
     {
@@ -58,9 +63,9 @@ public class GameManager : NetworkBehaviour
         }
     }
 
-    public void AddPlayerToList(Player.PlayerInfo obj)
+    public void AddPlayerToList(Player.PlayerInfo p_info)
     {
-        Player.PlayerInfo info = obj;
+        var info = p_info;
         players.Add(info);
     }
 
@@ -68,6 +73,22 @@ public class GameManager : NetworkBehaviour
     {
         if (players.Contains(obj))
             players.Remove(obj);
+    }
+
+    private IEnumerator SrvCheckForDisconnectedPlayersCoRo()
+    {
+        while (NetworkServer.active)
+        {
+            foreach (var info in players)
+            {
+                if (!NetworkServer.FindLocalObject(info.netId))
+                {
+                    RemovePlayerFromList(info);
+                    break;
+                }
+            }
+            yield return new WaitForSeconds(5);
+        }
     }
 }
 

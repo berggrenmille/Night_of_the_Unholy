@@ -121,15 +121,18 @@ public class Zombie : Enemy {
 
             foreach (var _player in GameManager.currentInstance.players) //Check distance to all alive players
             {
-                Player player = NetworkServer.FindLocalObject(_player.netId).GetComponent<Player>(); //Find the player script
-                nearestPlayerRange = target == null ? 0f : (target.transform.position - transform.position).magnitude;
-                if (!player.isDead)
+                if (NetworkServer.FindLocalObject(_player.netId))
                 {
-                    var range = (player.transform.position - transform.position).magnitude;
-                    if (range < nearestPlayerRange || nearestPlayerRange == 0f)
+                    Player player = NetworkServer.FindLocalObject(_player.netId).GetComponent<Player>(); //Find the player script
+                    nearestPlayerRange = target == null ? 0f : (target.transform.position - transform.position).magnitude;
+                    if (!player.isDead)
                     {
-                        nearestPlayer = player;
-                        nearestPlayerRange = range;
+                        var range = (player.transform.position - transform.position).magnitude;
+                        if (range < nearestPlayerRange || nearestPlayerRange == 0f)
+                        {
+                            nearestPlayer = player;
+                            nearestPlayerRange = range;
+                        }
                     }
                 }
             }

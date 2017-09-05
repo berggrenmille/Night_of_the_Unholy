@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23074866913069538}
   m_Layer: 9
   m_Name: Quad
-  m_TagString: Untagged
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 65057019578117432}
   m_Layer: 9
   m_Name: l_leg
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 65376440422596720}
   m_Layer: 9
   m_Name: l_arm
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4773324130568748}
   m_Layer: 9
   m_Name: Model
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 23896941555707028}
   m_Layer: 9
   m_Name: arm
-  m_TagString: Untagged
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 23628309282466242}
   m_Layer: 9
   m_Name: Head
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 23014594109401368}
   m_Layer: 9
   m_Name: Chest
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 23838153815134322}
   m_Layer: 9
   m_Name: arm
-  m_TagString: Untagged
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 65845776076650454}
   m_Layer: 9
   m_Name: r_arm
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 65960243396473188}
   m_Layer: 9
   m_Name: r_leg
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 23341841640077526}
   m_Layer: 9
   m_Name: leg
-  m_TagString: Untagged
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

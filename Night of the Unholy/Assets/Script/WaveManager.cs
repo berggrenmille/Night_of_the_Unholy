@@ -30,6 +30,7 @@ public class WaveManager : NetworkBehaviour
 
     public float delayedStart = 5f;
     public float startTimer;
+    public int aliveEnemies = 0;
 
     public WaveState currentWaveState = WaveState.DELAYED;
 
@@ -114,11 +115,8 @@ public class WaveManager : NetworkBehaviour
         WaitSetBool(5f, checkAlive);
         if (checkAlive)
         {
-            //return GameObject.FindGameObjectsWithTag("Enemy").Length == 0 ? false : true; maybe better test
-            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
-                return false;
-            else
-                return true;
+            aliveEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            return aliveEnemies != 0;
         }
         else
             return true;
@@ -129,7 +127,8 @@ public class WaveManager : NetworkBehaviour
         //kill all enemies
     }
 
-    void SpawnEntity(GameObject _entity, Wave _wave)
+    [Command]
+    private void CmdSpawnEntity(GameObject _entity, Wave _wave)
     {
         GameObject clone = Instantiate(_entity, gamemode.enemySpawnpoints[Random.Range(0, gamemode.enemySpawnpoints.Length)].transform.position, Quaternion.identity, null);
         Enemy enemy = clone.GetComponent<Enemy>();
@@ -150,7 +149,7 @@ public class WaveManager : NetworkBehaviour
 
         for (int i = 0; i < _wave.amount; i++)
         {
-            SpawnEntity(_wave.enemies[0], _wave); // change later so different zombies can spawn
+            CmdSpawnEntity(_wave.enemies[0], _wave); // change later so different zombies can spawn
             yield return new WaitForSeconds(1f / _wave.spawnRate);
             //delay spawn if needed
         }

@@ -56,51 +56,38 @@ private void Start()
 
         //Check keyboard inputs
 
-        if(Input.GetButtonDown("Cancel"))
-        {
+        if (Input.GetButtonDown("Cancel"))
             p_ui.TogglePause();
-        }
 
-        if(Input.GetButton("Sprint"))
+        if (Input.GetButton("Sprint"))
         {
-            if(player.isGrounded())
-            {
+            if (player.isGrounded())
                 player.movement.isRunning = true;
-            }
-        }else
-        {
-            player.movement.isRunning = false;
         }
+        else
+            player.movement.isRunning = false;
 
         if(Input.GetButtonDown("Jump"))
         {
-            if(player.isGrounded())
-            {
+            if (player.isGrounded())
                 p_motor.Jump();
-            }
         }
 
         if(Input.GetButtonDown("Reload"))
         {
             if (p_weaponManager.currentWeapon != null)
-            {
                 p_weaponManager.currentWeapon.Reload();
-            }
         }
 
         if(Input.GetButtonDown("Fire1"))
         {
-            if(p_weaponManager.currentWeapon != null)
-            {
+            if (p_weaponManager.currentWeapon != null)
                 p_weaponManager.currentWeapon.Shoot();
-            }
         }
         if (Input.GetButtonUp("Fire1"))
         {
             if (p_weaponManager.currentWeapon != null)
-            {
                 p_weaponManager.currentWeapon.StopShooting();
-            }
         }
 
     }
